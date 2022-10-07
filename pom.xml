@@ -82,11 +82,11 @@
 		<!-- Apache Commons DBCP -->
 		<commons-dbcp2.version>2.1.1</commons-dbcp2.version>
 
-		<!-- JasperReports -->
-		<jasperreports.version>6.3.0</jasperreports.version>
+<!--		&lt;!&ndash; JasperReports &ndash;&gt;-->
+<!--		<jasperreports.version>6.3.0</jasperreports.version>-->
 
-		<!-- JasperReports Fonts -->
-		<jasperreports-fonts.version>6.0.0</jasperreports-fonts.version>
+<!--		&lt;!&ndash; JasperReports Fonts &ndash;&gt;-->
+<!--		<jasperreports-fonts.version>6.0.0</jasperreports-fonts.version>-->
 		
 		<!-- EhCache -->
 		<ehcache.version>3.6.3</ehcache.version>
@@ -387,19 +387,19 @@
 			<version>${commons-dbcp2.version}</version>
 			<scope>compile</scope>
 		</dependency>
-		<!-- JasperReports -->
-		<dependency>
-			<groupId>net.sf.jasperreports</groupId>
-			<artifactId>jasperreports</artifactId>
-			<version>${jasperreports.version}</version>
-			<scope>compile</scope>
-		</dependency>
-		<dependency>
-			<groupId>net.sf.jasperreports</groupId>
-			<artifactId>jasperreports-fonts</artifactId>
-			<version>${jasperreports-fonts.version}</version>
-			<scope>compile</scope>
-		</dependency>
+<!--		&lt;!&ndash; JasperReports &ndash;&gt;-->
+<!--		<dependency>-->
+<!--			<groupId>net.sf.jasperreports</groupId>-->
+<!--			<artifactId>jasperreports</artifactId>-->
+<!--			<version>${jasperreports.version}</version>-->
+<!--			<scope>compile</scope>-->
+<!--		</dependency>-->
+<!--		<dependency>-->
+<!--			<groupId>net.sf.jasperreports</groupId>-->
+<!--			<artifactId>jasperreports-fonts</artifactId>-->
+<!--			<version>${jasperreports-fonts.version}</version>-->
+<!--			<scope>compile</scope>-->
+<!--		</dependency>-->
 
 		<!-- EhCache -->
 		<dependency>
