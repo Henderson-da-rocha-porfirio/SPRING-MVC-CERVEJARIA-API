@@ -52,6 +52,12 @@ public class CidadesController {
 		return mv;
 	}
 	
+/*
+* 
+* 
+* [@Cacheable](https://cursos.alura.com.br/forum/topico-cacheable-e-alteracao-no-banco-de-dados-133381)
+* 
+*/
 	@Cacheable(value = "cidades", key = "#codigoEstado")
 	@RequestMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
 	public @ResponseBody List<Cidade> pesquisarPorCodigoEstado(
