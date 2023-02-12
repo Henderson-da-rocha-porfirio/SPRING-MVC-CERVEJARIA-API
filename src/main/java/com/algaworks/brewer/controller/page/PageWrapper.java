@@ -1,13 +1,11 @@
 package com.algaworks.brewer.controller.page;
 
-import java.util.List;
+import org.springframework.data.domain.*;
+import org.springframework.data.domain.Sort.*;
+import org.springframework.web.util.*;
 
-import javax.servlet.http.HttpServletRequest;
-
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Sort;
-import org.springframework.data.domain.Sort.Order;
-import org.springframework.web.util.UriComponentsBuilder;
+import javax.servlet.http.*;
+import java.util.*;
 
 public class PageWrapper<T> {
 

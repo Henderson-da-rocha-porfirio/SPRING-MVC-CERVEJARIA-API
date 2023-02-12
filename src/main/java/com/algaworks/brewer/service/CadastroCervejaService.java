@@ -1,15 +1,14 @@
 package com.algaworks.brewer.service;
 
-import javax.persistence.PersistenceException;
+import com.algaworks.brewer.model.*;
+import com.algaworks.brewer.repository.*;
+import com.algaworks.brewer.service.exception.*;
+import com.algaworks.brewer.storage.*;
+import org.springframework.beans.factory.annotation.*;
+import org.springframework.stereotype.*;
+import org.springframework.transaction.annotation.*;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
-
-import com.algaworks.brewer.model.Cerveja;
-import com.algaworks.brewer.repository.Cervejas;
-import com.algaworks.brewer.service.exception.ImpossivelExcluirEntidadeException;
-import com.algaworks.brewer.storage.FotoStorage;
+import javax.persistence.*;
 
 @Service
 public class CadastroCervejaService {

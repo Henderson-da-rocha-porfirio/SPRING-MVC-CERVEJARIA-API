@@ -1,21 +1,17 @@
 package com.algaworks.brewer.storage.local;
 
-import static java.nio.file.FileSystems.getDefault;
+import com.algaworks.brewer.storage.*;
+import net.coobird.thumbnailator.*;
+import net.coobird.thumbnailator.name.*;
+import org.slf4j.*;
+import org.springframework.context.annotation.*;
+import org.springframework.stereotype.*;
+import org.springframework.web.multipart.*;
 
-import java.io.File;
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.context.annotation.Profile;
-import org.springframework.stereotype.Component;
-import org.springframework.web.multipart.MultipartFile;
+import java.io.*;
+import java.nio.file.*;
 
-import com.algaworks.brewer.storage.FotoStorage;
-
-import net.coobird.thumbnailator.Thumbnails;
-import net.coobird.thumbnailator.name.Rename;
+import static java.nio.file.FileSystems.*;
 
 @Profile("local")
 @Component

@@ -1,6 +1,6 @@
 package com.algaworks.brewer.repository.filter;
 
-import com.algaworks.brewer.model.Estado;
+import com.algaworks.brewer.model.*;
 
 public class CidadeFilter {
 

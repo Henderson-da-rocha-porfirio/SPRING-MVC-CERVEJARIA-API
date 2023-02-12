@@ -1,13 +1,10 @@
 package com.algaworks.brewer.controller;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.servlet.ModelAndView;
-
-import com.algaworks.brewer.repository.Cervejas;
-import com.algaworks.brewer.repository.Clientes;
-import com.algaworks.brewer.repository.Vendas;
+import com.algaworks.brewer.repository.*;
+import org.springframework.beans.factory.annotation.*;
+import org.springframework.stereotype.*;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.*;
 
 @Controller
 public class DashboardController {

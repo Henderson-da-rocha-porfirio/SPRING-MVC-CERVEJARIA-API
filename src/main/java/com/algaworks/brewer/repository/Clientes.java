@@ -1,12 +1,10 @@
 package com.algaworks.brewer.repository;
 
-import java.util.List;
-import java.util.Optional;
+import com.algaworks.brewer.model.*;
+import com.algaworks.brewer.repository.helper.cliente.*;
+import org.springframework.data.jpa.repository.*;
 
-import org.springframework.data.jpa.repository.JpaRepository;
-
-import com.algaworks.brewer.model.Cliente;
-import com.algaworks.brewer.repository.helper.cliente.ClientesQueries;
+import java.util.*;
 
 public interface Clientes extends JpaRepository<Cliente, Long>, ClientesQueries {
 

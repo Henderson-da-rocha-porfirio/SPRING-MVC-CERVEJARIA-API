@@ -1,31 +1,15 @@
 package com.algaworks.brewer.model;
 
-import java.io.Serializable;
+import com.algaworks.brewer.model.validation.*;
+import com.algaworks.brewer.model.validation.group.*;
+import com.fasterxml.jackson.annotation.*;
+import org.hibernate.validator.constraints.*;
+import org.hibernate.validator.constraints.br.*;
+import org.hibernate.validator.group.*;
 
-import javax.persistence.Column;
-import javax.persistence.Embedded;
-import javax.persistence.Entity;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.PostLoad;
-import javax.persistence.PrePersist;
-import javax.persistence.PreUpdate;
-import javax.persistence.Table;
-import javax.validation.constraints.NotNull;
-
-import org.hibernate.validator.constraints.Email;
-import org.hibernate.validator.constraints.NotBlank;
-import org.hibernate.validator.constraints.br.CNPJ;
-import org.hibernate.validator.constraints.br.CPF;
-import org.hibernate.validator.group.GroupSequenceProvider;
-
-import com.algaworks.brewer.model.validation.ClienteGroupSequenceProvider;
-import com.algaworks.brewer.model.validation.group.CnpjGroup;
-import com.algaworks.brewer.model.validation.group.CpfGroup;
-import com.fasterxml.jackson.annotation.JsonIgnore;
+import javax.persistence.*;
+import javax.validation.constraints.*;
+import java.io.*;
 
 @Entity
 @Table(name = "cliente")

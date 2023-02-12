@@ -1,14 +1,11 @@
 package com.algaworks.brewer.session;
 
+import com.algaworks.brewer.model.*;
+import org.junit.*;
+
+import java.math.*;
+
 import static org.junit.Assert.*;
-
-import java.math.BigDecimal;
-
-import org.junit.Before;
-import org.junit.Test;
-
-import com.algaworks.brewer.model.Cerveja;
-import com.algaworks.brewer.session.TabelaItensVenda;
 
 public class TabelaItensVendaTest {
 	

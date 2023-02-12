@@ -1,36 +1,25 @@
 package com.algaworks.brewer.controller;
 
-import java.util.List;
+import com.algaworks.brewer.controller.page.*;
+import com.algaworks.brewer.model.*;
+import com.algaworks.brewer.repository.*;
+import com.algaworks.brewer.repository.filter.*;
+import com.algaworks.brewer.service.*;
+import com.algaworks.brewer.service.exception.*;
+import org.springframework.beans.factory.annotation.*;
+import org.springframework.data.domain.*;
+import org.springframework.data.web.*;
+import org.springframework.http.*;
+import org.springframework.stereotype.*;
+import org.springframework.util.*;
+import org.springframework.validation.*;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.*;
+import org.springframework.web.servlet.mvc.support.*;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.validation.Valid;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Pageable;
-import org.springframework.data.web.PageableDefault;
-import org.springframework.http.MediaType;
-import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
-import org.springframework.util.StringUtils;
-import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.ExceptionHandler;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.servlet.ModelAndView;
-import org.springframework.web.servlet.mvc.support.RedirectAttributes;
-
-import com.algaworks.brewer.controller.page.PageWrapper;
-import com.algaworks.brewer.model.Cliente;
-import com.algaworks.brewer.model.TipoPessoa;
-import com.algaworks.brewer.repository.Clientes;
-import com.algaworks.brewer.repository.Estados;
-import com.algaworks.brewer.repository.filter.ClienteFilter;
-import com.algaworks.brewer.service.CadastroClienteService;
-import com.algaworks.brewer.service.exception.CpfCnpjClienteJaCadastradoException;
+import javax.servlet.http.*;
+import javax.validation.*;
+import java.util.*;
 
 @Controller
 @RequestMapping("/clientes")

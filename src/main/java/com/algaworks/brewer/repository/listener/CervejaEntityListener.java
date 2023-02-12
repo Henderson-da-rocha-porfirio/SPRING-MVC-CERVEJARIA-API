@@ -1,12 +1,11 @@
 package com.algaworks.brewer.repository.listener;
 
-import javax.persistence.PostLoad;
+import com.algaworks.brewer.model.*;
+import com.algaworks.brewer.storage.*;
+import org.springframework.beans.factory.annotation.*;
+import org.springframework.web.context.support.*;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.context.support.SpringBeanAutowiringSupport;
-
-import com.algaworks.brewer.model.Cerveja;
-import com.algaworks.brewer.storage.FotoStorage;
+import javax.persistence.*;
 
 public class CervejaEntityListener {
 	

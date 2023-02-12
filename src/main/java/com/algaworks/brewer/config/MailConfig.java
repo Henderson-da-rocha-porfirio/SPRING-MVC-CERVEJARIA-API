@@ -1,17 +1,13 @@
 package com.algaworks.brewer.config;
 
-import java.util.Properties;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
+import com.algaworks.brewer.mail.*;
+import org.springframework.beans.factory.annotation.*;
 import org.springframework.context.annotation.PropertySource;
-import org.springframework.core.env.Environment;
-import org.springframework.mail.javamail.JavaMailSender;
-import org.springframework.mail.javamail.JavaMailSenderImpl;
+import org.springframework.context.annotation.*;
+import org.springframework.core.env.*;
+import org.springframework.mail.javamail.*;
 
-import com.algaworks.brewer.mail.Mailer;
+import java.util.*;
 
 @Configuration
 @ComponentScan(basePackageClasses = Mailer.class)

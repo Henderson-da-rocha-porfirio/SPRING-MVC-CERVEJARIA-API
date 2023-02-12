@@ -1,10 +1,9 @@
 package com.algaworks.brewer.repository.paginacao;
 
-import org.hibernate.Criteria;
-import org.hibernate.criterion.Order;
-import org.springframework.data.domain.Pageable;
-import org.springframework.data.domain.Sort;
-import org.springframework.stereotype.Component;
+import org.hibernate.*;
+import org.hibernate.criterion.*;
+import org.springframework.data.domain.*;
+import org.springframework.stereotype.*;
 
 @Component
 public class PaginacaoUtil {

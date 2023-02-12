@@ -1,11 +1,9 @@
 package com.algaworks.brewer.model.validation;
 
-import java.util.ArrayList;
-import java.util.List;
+import com.algaworks.brewer.model.*;
+import org.hibernate.validator.spi.group.*;
 
-import org.hibernate.validator.spi.group.DefaultGroupSequenceProvider;
-
-import com.algaworks.brewer.model.Cliente;
+import java.util.*;
 
 public class ClienteGroupSequenceProvider implements DefaultGroupSequenceProvider<Cliente> {
 

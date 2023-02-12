@@ -1,17 +1,13 @@
 package com.algaworks.brewer.controller;
 
+import com.algaworks.brewer.dto.*;
+import com.algaworks.brewer.service.*;
 import org.apache.http.HttpHeaders;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.MediaType;
-import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.servlet.ModelAndView;
-
-import com.algaworks.brewer.dto.PeriodoRelatorio;
-import com.algaworks.brewer.service.RelatorioService;
+import org.springframework.beans.factory.annotation.*;
+import org.springframework.http.*;
+import org.springframework.stereotype.*;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.*;
 
 @Controller
 @RequestMapping("/relatorios")

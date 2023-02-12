@@ -1,9 +1,8 @@
 package com.algaworks.brewer.storage;
 
-import org.springframework.web.context.request.async.DeferredResult;
-import org.springframework.web.multipart.MultipartFile;
-
-import com.algaworks.brewer.dto.FotoDTO;
+import com.algaworks.brewer.dto.*;
+import org.springframework.web.context.request.async.*;
+import org.springframework.web.multipart.*;
 
 public class FotoStorageRunnable implements Runnable {
 

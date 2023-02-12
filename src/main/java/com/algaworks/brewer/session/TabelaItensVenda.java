@@ -1,13 +1,10 @@
 package com.algaworks.brewer.session;
 
-import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
-import java.util.stream.IntStream;
+import com.algaworks.brewer.model.*;
 
-import com.algaworks.brewer.model.Cerveja;
-import com.algaworks.brewer.model.ItemVenda;
+import java.math.*;
+import java.util.*;
+import java.util.stream.*;
 
 class TabelaItensVenda {
 

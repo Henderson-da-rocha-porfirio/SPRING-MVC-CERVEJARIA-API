@@ -1,10 +1,8 @@
 package com.algaworks.brewer.repository.helper.estilo;
 
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
-
-import com.algaworks.brewer.model.Estilo;
-import com.algaworks.brewer.repository.filter.EstiloFilter;
+import com.algaworks.brewer.model.*;
+import com.algaworks.brewer.repository.filter.*;
+import org.springframework.data.domain.*;
 
 public interface EstilosQueries {
 	

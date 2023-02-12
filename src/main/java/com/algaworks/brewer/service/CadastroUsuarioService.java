@@ -1,17 +1,15 @@
 package com.algaworks.brewer.service;
 
-import java.util.Optional;
+import com.algaworks.brewer.model.*;
+import com.algaworks.brewer.repository.*;
+import com.algaworks.brewer.service.exception.*;
+import org.springframework.beans.factory.annotation.*;
+import org.springframework.security.crypto.password.*;
+import org.springframework.stereotype.*;
+import org.springframework.transaction.annotation.*;
+import org.springframework.util.*;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
-import org.springframework.util.StringUtils;
-
-import com.algaworks.brewer.model.Usuario;
-import com.algaworks.brewer.repository.Usuarios;
-import com.algaworks.brewer.service.exception.EmailUsuarioJaCadastradoException;
-import com.algaworks.brewer.service.exception.SenhaObrigatoriaUsuarioException;
+import java.util.*;
 
 //regras de negócio
 

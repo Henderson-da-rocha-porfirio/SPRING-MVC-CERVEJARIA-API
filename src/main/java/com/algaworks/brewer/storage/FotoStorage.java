@@ -1,8 +1,8 @@
 package com.algaworks.brewer.storage;
 
-import java.util.UUID;
+import org.springframework.web.multipart.*;
 
-import org.springframework.web.multipart.MultipartFile;
+import java.util.*;
 
 public interface FotoStorage {
 	

@@ -1,28 +1,19 @@
 package com.algaworks.brewer.mail;
 
-import java.util.HashMap;
-import java.util.Locale;
-import java.util.Map;
+import com.algaworks.brewer.model.*;
+import com.algaworks.brewer.storage.*;
+import org.slf4j.*;
+import org.springframework.beans.factory.annotation.*;
+import org.springframework.core.io.*;
+import org.springframework.mail.javamail.*;
+import org.springframework.scheduling.annotation.*;
+import org.springframework.stereotype.*;
+import org.thymeleaf.*;
+import org.thymeleaf.context.*;
 
-import javax.mail.MessagingException;
-import javax.mail.internet.MimeMessage;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.core.io.ByteArrayResource;
-import org.springframework.core.io.ClassPathResource;
-import org.springframework.mail.javamail.JavaMailSender;
-import org.springframework.mail.javamail.MimeMessageHelper;
-import org.springframework.scheduling.annotation.Async;
-import org.springframework.stereotype.Component;
-import org.thymeleaf.TemplateEngine;
-import org.thymeleaf.context.Context;
-
-import com.algaworks.brewer.model.Cerveja;
-import com.algaworks.brewer.model.ItemVenda;
-import com.algaworks.brewer.model.Venda;
-import com.algaworks.brewer.storage.FotoStorage;
+import javax.mail.*;
+import javax.mail.internet.*;
+import java.util.*;
 
 @Component
 public class Mailer {

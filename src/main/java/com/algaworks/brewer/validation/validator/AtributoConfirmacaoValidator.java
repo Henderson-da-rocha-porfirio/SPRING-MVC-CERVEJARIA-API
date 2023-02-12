@@ -1,12 +1,10 @@
 package com.algaworks.brewer.validation.validator;
 
-import javax.validation.ConstraintValidator;
-import javax.validation.ConstraintValidatorContext;
-import javax.validation.ConstraintValidatorContext.ConstraintViolationBuilder;
+import com.algaworks.brewer.validation.*;
+import org.apache.commons.beanutils.*;
 
-import org.apache.commons.beanutils.BeanUtils;
-
-import com.algaworks.brewer.validation.AtributoConfirmacao;
+import javax.validation.*;
+import javax.validation.ConstraintValidatorContext.*;
 
 public class AtributoConfirmacaoValidator implements ConstraintValidator<AtributoConfirmacao, Object> {
 

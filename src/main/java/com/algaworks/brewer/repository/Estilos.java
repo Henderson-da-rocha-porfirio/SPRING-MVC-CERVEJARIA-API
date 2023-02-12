@@ -1,12 +1,11 @@
 package com.algaworks.brewer.repository;
 
-import java.util.Optional;
+import com.algaworks.brewer.model.*;
+import com.algaworks.brewer.repository.helper.estilo.*;
+import org.springframework.data.jpa.repository.*;
+import org.springframework.stereotype.*;
 
-import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
-
-import com.algaworks.brewer.model.Estilo;
-import com.algaworks.brewer.repository.helper.estilo.EstilosQueries;
+import java.util.*;
 
 @Repository
 public interface Estilos extends JpaRepository<Estilo, Long>, EstilosQueries {

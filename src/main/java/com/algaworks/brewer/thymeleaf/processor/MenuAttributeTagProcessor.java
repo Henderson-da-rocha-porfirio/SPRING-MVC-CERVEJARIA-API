@@ -1,18 +1,14 @@
 package com.algaworks.brewer.thymeleaf.processor;
 
-import javax.servlet.http.HttpServletRequest;
+import org.thymeleaf.*;
+import org.thymeleaf.context.*;
+import org.thymeleaf.engine.*;
+import org.thymeleaf.model.*;
+import org.thymeleaf.processor.element.*;
+import org.thymeleaf.standard.expression.*;
+import org.thymeleaf.templatemode.*;
 
-import org.thymeleaf.IEngineConfiguration;
-import org.thymeleaf.context.ITemplateContext;
-import org.thymeleaf.context.IWebContext;
-import org.thymeleaf.engine.AttributeName;
-import org.thymeleaf.model.IProcessableElementTag;
-import org.thymeleaf.processor.element.AbstractAttributeTagProcessor;
-import org.thymeleaf.processor.element.IElementTagStructureHandler;
-import org.thymeleaf.standard.expression.IStandardExpression;
-import org.thymeleaf.standard.expression.IStandardExpressionParser;
-import org.thymeleaf.standard.expression.StandardExpressions;
-import org.thymeleaf.templatemode.TemplateMode;
+import javax.servlet.http.*;
 
 public class MenuAttributeTagProcessor extends AbstractAttributeTagProcessor {
 

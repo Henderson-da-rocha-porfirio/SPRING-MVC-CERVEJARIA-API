@@ -1,17 +1,11 @@
 package com.algaworks.brewer.thymeleaf;
 
-import java.util.HashSet;
-import java.util.Set;
+import com.algaworks.brewer.thymeleaf.processor.*;
+import org.thymeleaf.dialect.*;
+import org.thymeleaf.processor.*;
+import org.thymeleaf.standard.*;
 
-import org.thymeleaf.dialect.AbstractProcessorDialect;
-import org.thymeleaf.processor.IProcessor;
-import org.thymeleaf.standard.StandardDialect;
-
-import com.algaworks.brewer.thymeleaf.processor.ClassForErrorAttributeTagProcessor;
-import com.algaworks.brewer.thymeleaf.processor.MenuAttributeTagProcessor;
-import com.algaworks.brewer.thymeleaf.processor.MessageElementTagProcessor;
-import com.algaworks.brewer.thymeleaf.processor.OrderElementTagProcessor;
-import com.algaworks.brewer.thymeleaf.processor.PaginationElementTagProcessor;
+import java.util.*;
 
 public class BrewerDialect extends AbstractProcessorDialect {
 

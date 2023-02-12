@@ -1,28 +1,19 @@
 package com.algaworks.brewer.config;
 
-import java.net.URI;
-import java.net.URISyntaxException;
+import com.algaworks.brewer.model.*;
+import com.algaworks.brewer.repository.*;
+import org.apache.commons.dbcp2.*;
+import org.springframework.context.annotation.*;
+import org.springframework.data.jpa.repository.config.*;
+import org.springframework.jdbc.datasource.lookup.*;
+import org.springframework.orm.jpa.*;
+import org.springframework.orm.jpa.vendor.*;
+import org.springframework.transaction.*;
+import org.springframework.transaction.annotation.*;
 
-import javax.persistence.EntityManagerFactory;
-import javax.sql.DataSource;
-
-import org.apache.commons.dbcp2.BasicDataSource;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Profile;
-import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
-import org.springframework.jdbc.datasource.lookup.JndiDataSourceLookup;
-import org.springframework.orm.jpa.JpaTransactionManager;
-import org.springframework.orm.jpa.JpaVendorAdapter;
-import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
-import org.springframework.orm.jpa.vendor.Database;
-import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
-import org.springframework.transaction.PlatformTransactionManager;
-import org.springframework.transaction.annotation.EnableTransactionManagement;
-
-import com.algaworks.brewer.model.Cerveja;
-import com.algaworks.brewer.repository.Cervejas;
+import javax.persistence.*;
+import javax.sql.*;
+import java.net.*;
 
 @Configuration
 @ComponentScan(basePackageClasses = Cervejas.class)

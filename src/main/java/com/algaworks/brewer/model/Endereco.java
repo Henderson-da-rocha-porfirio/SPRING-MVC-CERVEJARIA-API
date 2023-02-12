@@ -1,11 +1,7 @@
 package com.algaworks.brewer.model;
 
-import java.io.Serializable;
-
-import javax.persistence.Embeddable;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.Transient;
+import javax.persistence.*;
+import java.io.*;
 
 @Embeddable
 public class Endereco implements Serializable {

@@ -1,20 +1,11 @@
 package com.algaworks.brewer.config.init;
 
-import javax.servlet.Filter;
-import javax.servlet.MultipartConfigElement;
-import javax.servlet.ServletContext;
-import javax.servlet.ServletException;
-import javax.servlet.ServletRegistration.Dynamic;
+import com.algaworks.brewer.config.*;
+import org.springframework.web.filter.*;
+import org.springframework.web.servlet.support.*;
 
-import org.springframework.web.filter.FormContentFilter;
-import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
-
-import com.algaworks.brewer.config.JPAConfig;
-import com.algaworks.brewer.config.MailConfig;
-import com.algaworks.brewer.config.S3Config;
-import com.algaworks.brewer.config.SecurityConfig;
-import com.algaworks.brewer.config.ServiceConfig;
-import com.algaworks.brewer.config.WebConfig;
+import javax.servlet.*;
+import javax.servlet.ServletRegistration.*;
 
 public class AppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
 

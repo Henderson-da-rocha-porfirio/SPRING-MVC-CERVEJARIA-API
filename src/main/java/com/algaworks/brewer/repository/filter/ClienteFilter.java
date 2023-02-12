@@ -1,6 +1,6 @@
 package com.algaworks.brewer.repository.filter;
 
-import com.algaworks.brewer.model.TipoPessoa;
+import com.algaworks.brewer.model.*;
 
 public class ClienteFilter {
 

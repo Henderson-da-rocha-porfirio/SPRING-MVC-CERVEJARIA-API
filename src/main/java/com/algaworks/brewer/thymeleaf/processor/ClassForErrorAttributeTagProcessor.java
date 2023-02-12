@@ -1,12 +1,11 @@
 package com.algaworks.brewer.thymeleaf.processor;
 
-import org.thymeleaf.context.ITemplateContext;
-import org.thymeleaf.engine.AttributeName;
-import org.thymeleaf.model.IProcessableElementTag;
-import org.thymeleaf.processor.element.AbstractAttributeTagProcessor;
-import org.thymeleaf.processor.element.IElementTagStructureHandler;
-import org.thymeleaf.spring4.util.FieldUtils;
-import org.thymeleaf.templatemode.TemplateMode;
+import org.thymeleaf.context.*;
+import org.thymeleaf.engine.*;
+import org.thymeleaf.model.*;
+import org.thymeleaf.processor.element.*;
+import org.thymeleaf.spring4.util.*;
+import org.thymeleaf.templatemode.*;
 
 public class ClassForErrorAttributeTagProcessor extends AbstractAttributeTagProcessor {
 

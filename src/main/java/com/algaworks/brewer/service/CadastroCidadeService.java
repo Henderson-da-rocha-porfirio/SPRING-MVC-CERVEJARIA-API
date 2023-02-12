@@ -1,14 +1,13 @@
 package com.algaworks.brewer.service;
 
-import java.util.Optional;
+import com.algaworks.brewer.model.*;
+import com.algaworks.brewer.repository.*;
+import com.algaworks.brewer.service.exception.*;
+import org.springframework.beans.factory.annotation.*;
+import org.springframework.stereotype.*;
+import org.springframework.transaction.annotation.*;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
-
-import com.algaworks.brewer.model.Cidade;
-import com.algaworks.brewer.repository.Cidades;
-import com.algaworks.brewer.service.exception.NomeCidadeJaCadastradaException;
+import java.util.*;
 
 @Service
 public class CadastroCidadeService {

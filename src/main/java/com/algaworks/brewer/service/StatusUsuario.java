@@ -1,6 +1,6 @@
 package com.algaworks.brewer.service;
 
-import com.algaworks.brewer.repository.Usuarios;
+import com.algaworks.brewer.repository.*;
 
 public enum StatusUsuario {
 	
